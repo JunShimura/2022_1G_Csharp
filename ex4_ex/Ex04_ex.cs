@@ -22,7 +22,7 @@ namespace ex04
         static void Main(string[] args)
         {
             Denomination[] denominations =
-                {
+            {
                 new Denomination(10000,"1万円札"),
                 new Denomination(5000,"5千円札"),
                 new Denomination(2000,"千円札"),
