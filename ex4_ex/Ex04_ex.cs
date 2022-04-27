@@ -25,7 +25,7 @@ namespace ex04
             {
                 new Denomination(10000,"1万円札"),
                 new Denomination(5000,"5千円札"),
-                new Denomination(2000,"千円札"),
+                new Denomination(2000,"2千円札"),
                 new Denomination(1000,"千円札"),
                 new Denomination(500,"五百円玉"),
                 new Denomination(100,"百円玉"),
@@ -36,10 +36,13 @@ namespace ex04
             };
             Console.Write("金額を入力:");
             var money = int.Parse(Console.ReadLine());
-            for (int i = 0; i < denominations.Length; i++)
+            for (int i = 0; i < denominations.Length&&money>0; i++)
             {
                 int number = denominations[i].getNumber(money, ref money);
-                Console.Write($"{denominations[i].message}が{number}枚\n");
+                if (number != 0)
+                {
+                    Console.Write($"{denominations[i].message}が{number}枚\n");
+                }
             }
         }
     };
