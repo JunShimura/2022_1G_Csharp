@@ -23,7 +23,7 @@ namespace Ex12
                 {
                     Console.WriteLine($"あと{maxTime - i}回答えられます、\nいくつでしょうか？");
                     inputNum = int.Parse(Console.ReadLine());
-                    if(inputNum> 1&& inputNum<max)
+                    if(inputNum>= 1&& inputNum<max)
                     {
                         break;
                     }
