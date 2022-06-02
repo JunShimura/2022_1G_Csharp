@@ -44,6 +44,52 @@ namespace Ex16
             Console.WriteLine($"　{ts}");
             Console.WriteLine($"　{ts.Hours}時間 {ts.Minutes}分 {ts.Seconds}秒 {ts.Milliseconds}ミリ秒");
             Console.WriteLine($"　{sw.ElapsedMilliseconds}ミリ秒");
+
+            sw.Start();
+            // indexだけ更新
+            //最大値,最小値を求める
+            var maxId = 0;
+            var minId = 0;
+            sum = table[0];
+            for (int i = 1; i < table.Length; i++)
+            {
+                if (table[maxId] < table[i])
+                {   //もっと大きい値があった場合、最大値を更新
+                    maxId = i;
+                }
+                else if (table[minId] > table[i])
+                {   //もっと小さい値があった場合、最小値を更新
+                    minId = i;
+                }
+                sum += table[i];
+            }
+            sw.Stop();
+
+            Console.WriteLine($"最大値＝{max}\n最小値={min}\n平均={(double)sum / table.Length}");
+            Console.WriteLine("■処理Bにかかった時間");
+            ts = sw.Elapsed;
+            Console.WriteLine($"　{ts}");
+            Console.WriteLine($"　{ts.Hours}時間 {ts.Minutes}分 {ts.Seconds}秒 {ts.Milliseconds}ミリ秒");
+            Console.WriteLine($"　{sw.ElapsedMilliseconds}ミリ秒");
+
+            sw.Start();
+            //最大値,最小値を求める
+            max = table.Max();
+            min = table.Min();
+            average = table.Average();
+
+            sw.Stop();
+
+            Console.WriteLine($"最大値＝{max}\n最小値={min}\n平均={(double)average}");
+            Console.WriteLine("■処理Bにかかった時間");
+            ts = sw.Elapsed;
+            Console.WriteLine($"　{ts}");
+            Console.WriteLine($"　{ts.Hours}時間 {ts.Minutes}分 {ts.Seconds}秒 {ts.Milliseconds}ミリ秒");
+            Console.WriteLine($"　{sw.ElapsedMilliseconds}ミリ秒");
+
+
+
+
         }
     }
 }
