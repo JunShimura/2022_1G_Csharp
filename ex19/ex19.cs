@@ -12,7 +12,8 @@ namespace EX19_hint
         }
         static string Praise(string s)
         {
-            s = s + "さんかっこいい！";
+            //s = s + "さんかっこいい！";
+            s = $"{s}さんかっこいい！";
             return s;
         }
     }
