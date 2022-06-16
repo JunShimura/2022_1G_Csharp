@@ -6,14 +6,27 @@ using System.Threading.Tasks;
 
 namespace InputUtilitys
 {
+    /// <summary>
+    /// 入力用汎用ライブラリ
+    /// </summary>
     class InputUtility
     {
         //入力用に作った汎用的関数
-       static public string Input(string message)
+        /// <summary>
+        /// Input String
+        /// </summary>
+        /// <param name="message">Prompt for input</param>
+        /// <returns>Entered string</returns>
+        static public string Input(string message)
         {
             Console.WriteLine(message);
             return Console.ReadLine();
         }
+        /// <summary>
+        /// Enter an integer value
+        /// </summary>
+        /// <param name="message">Prompt for input</param>
+        /// <returns>Entered Integer</returns>
         static public int InputNumber(string message)
         {
             int i = 0;
@@ -30,10 +43,25 @@ namespace InputUtilitys
             }
             return i;
         }
+        /// <summary>
+        /// Enter an integer value
+        /// </summary>
+        /// <param name="max">Maximum value allowed</param>
+        /// <param name="message">Prompt for input</param>
+        /// <param name="errorMessage">Messege for invalid value</param>
+        /// <returns>Entered Integer</returns>
         static public int InputNumber(int max, string message = "値を入力してください", string errorMessage = "値が範囲外です")
         {
             return InputNumber(max, 1, message, errorMessage);
         }
+        /// <summary>
+        /// Enter an integer value
+        /// </summary>
+        /// <param name="max">Maximum value allowed</param>
+        /// <param name="min">Minimum value allowed</param>
+        /// <param name="message">Prompt for input</param>
+        /// <param name="errorMessage">Messege for invalid value</param>
+        /// <returns>Entered Integer</returns>
         static public int InputNumber(
             int max,  //必ず指定するのでオプション無し
             int min = 1,
@@ -55,6 +83,11 @@ namespace InputUtilitys
             }
             return i;
         }
+        /// <summary>
+        /// Enter a floating-point number
+        /// </summary>
+        /// <param name="message">Prompt for input</param>
+        /// <returns>Entered number</returns>    
         static public float InputFloat(string message = "値を入力してください")
         {
             float i = 0;
@@ -71,11 +104,18 @@ namespace InputUtilitys
             }
             return i;
         }
+        /// <summary>
+        /// nter a floating-point number
+        /// </summary>
+        /// <param name="max">Maximum value allowed</param>
+        /// <param name="message">Prompt for input</param>
+        /// <param name="errorMessage">Messege for invalid value</param>
+        /// <returns>Entered number</returns> 
         static public float InputFloat(float max, string message = "値を入力してください", string errorMessage = "入力エラー")
         {
             return InputFloat(max, 1, message, errorMessage);
         }
-        static float InputFloat(
+        static public float InputFloat(
             float max,  //必ず指定するのでオプション無し
             float min = 1,
             string message = "値を入力してください",
@@ -96,6 +136,11 @@ namespace InputUtilitys
             }
             return i;
         }
+        /// <summary>
+        /// Write text with color
+        /// </summary>
+        /// <param name="s">string</param>
+        /// <param name="c">color</param>
         static public void OutputColoredText(string s, ConsoleColor c)
         {
             Console.ForegroundColor = c;
