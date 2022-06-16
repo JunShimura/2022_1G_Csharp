@@ -57,8 +57,18 @@ namespace InputUtilitys
         }
         static public float InputFloat(string message = "値を入力してください")
         {
-            Console.WriteLine(message);
-            float i = float.Parse(Console.ReadLine());
+            float i = 0;
+            while (true)
+            {
+                if (float.TryParse(Input(message), out i))
+                {
+                    break;
+                }
+                else
+                {
+                    OutputColoredText("異常な入力です、もう一度、入力して下さい", ConsoleColor.Red);
+                }
+            }
             return i;
         }
         static public float InputFloat(float max, string message = "値を入力してください", string errorMessage = "入力エラー")

@@ -103,11 +103,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Challenge01_recursive", "Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImputUtility", "ImputUtility\ImputUtility.csproj", "{993B3788-6168-4DAA-8A8B-F2FCB2DA650F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex20", "ex20\ex20.csproj", "{DC286CBE-8710-4EBE-A745-A2CDE9DD0899}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex20", "ex20\ex20.csproj", "{DC286CBE-8710-4EBE-A745-A2CDE9DD0899}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CastSample", "CastSample\CastSample.csproj", "{77633518-8E15-4F7A-8C7F-9ED074C01AFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CastSample", "CastSample\CastSample.csproj", "{77633518-8E15-4F7A-8C7F-9ED074C01AFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex21", "Ex21\Ex21.csproj", "{363E7A23-3B37-46EC-950C-57F01EF8A4F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex21", "Ex21\Ex21.csproj", "{363E7A23-3B37-46EC-950C-57F01EF8A4F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex22_hint", "Ex22_hint\Ex22_hint.csproj", "{1D39117D-9892-4D4E-B29A-AE615E6F64C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -327,6 +329,10 @@ Global
 		{363E7A23-3B37-46EC-950C-57F01EF8A4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{363E7A23-3B37-46EC-950C-57F01EF8A4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{363E7A23-3B37-46EC-950C-57F01EF8A4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D39117D-9892-4D4E-B29A-AE615E6F64C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D39117D-9892-4D4E-B29A-AE615E6F64C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D39117D-9892-4D4E-B29A-AE615E6F64C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D39117D-9892-4D4E-B29A-AE615E6F64C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
