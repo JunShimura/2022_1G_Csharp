@@ -115,6 +115,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalFunction", "LocalFunct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex22", "Ex22\Ex22.csproj", "{9127A0A3-4AF5-4AC1-B959-46C372D3FF9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex23_hint", "Ex23_hint\Ex23_hint.csproj", "{EB23A567-3156-4879-8C7D-5A8C67157006}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -345,6 +347,10 @@ Global
 		{9127A0A3-4AF5-4AC1-B959-46C372D3FF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9127A0A3-4AF5-4AC1-B959-46C372D3FF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9127A0A3-4AF5-4AC1-B959-46C372D3FF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB23A567-3156-4879-8C7D-5A8C67157006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB23A567-3156-4879-8C7D-5A8C67157006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB23A567-3156-4879-8C7D-5A8C67157006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB23A567-3156-4879-8C7D-5A8C67157006}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
