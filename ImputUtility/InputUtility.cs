@@ -46,26 +46,26 @@ namespace InputUtilitys
         /// <summary>
         /// Enter an integer value
         /// </summary>
-        /// <param name="max">Maximum value allowed</param>
         /// <param name="message">Prompt for input</param>
+        /// <param name="max">Maximum value allowed</param>
         /// <param name="errorMessage">Messege for invalid value</param>
         /// <returns>Entered Integer</returns>
-        static public int InputNumber(int max, string message = "値を入力してください", string errorMessage = "値が範囲外です")
+        static public int InputNumber(string message, int max, string errorMessage = "値が範囲外です")
         {
-            return InputNumber(max, 1, message, errorMessage);
+            return InputNumber(message, 0, max, errorMessage);
         }
         /// <summary>
         /// Enter an integer value
         /// </summary>
-        /// <param name="max">Maximum value allowed</param>
-        /// <param name="min">Minimum value allowed</param>
         /// <param name="message">Prompt for input</param>
+        /// <param name="min">Minimum value allowed</param>
+        /// /// <param name="max">Maximum value allowed</param>
         /// <param name="errorMessage">Messege for invalid value</param>
         /// <returns>Entered Integer</returns>
         static public int InputNumber(
-            int max,  //必ず指定するのでオプション無し
-            int min = 1,
-            string message = "値を入力してください",
+            string message,
+            int min,
+            int max,
             string errorMessage = "値が範囲外です")
         {
             int i;
@@ -111,14 +111,14 @@ namespace InputUtilitys
         /// <param name="message">Prompt for input</param>
         /// <param name="errorMessage">Messege for invalid value</param>
         /// <returns>Entered number</returns> 
-        static public float InputFloat(float max, string message = "値を入力してください", string errorMessage = "入力エラー")
+        static public float InputFloat(string message, float max, string errorMessage = "入力エラー")
         {
-            return InputFloat(max, 1, message, errorMessage);
+            return InputFloat(message, 0, max, errorMessage);
         }
         static public float InputFloat(
-            float max,  //必ず指定するのでオプション無し
-            float min = 1,
-            string message = "値を入力してください",
+            string message,
+            float min,
+            float max,
             string errorMessage = "入力エラー")
         {
             float i;
@@ -146,6 +146,10 @@ namespace InputUtilitys
             Console.ForegroundColor = c;
             Console.WriteLine(s);
             Console.ResetColor();
+        }
+        static public bool IsInRange<T>(T val, T min, T max) where T : IComparable<T>
+        {
+            return val.CompareTo(min) >= 0 && val.CompareTo(max) < 0;
         }
     }
 }

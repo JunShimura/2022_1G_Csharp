@@ -1,6 +1,6 @@
-﻿namespace Ex23
+﻿namespace Ex23_ex2
 {
-    internal class Ex23
+    internal class Ex23_ex2
     {
         const int headMin = 0;        // 頭の数の最小値
         const int headMax = 1000;  // 頭の数の最大値 
@@ -11,26 +11,8 @@
         {
             while (true)
             {
-                float heads;
-                while (true)
-                {
-                    heads = InputFloat("頭の数を入力してください", headMin, headMax);
-                    if (IsNaturalNumberOr0(heads))
-                    {
-                        break;
-                    }
-                    Console.WriteLine("入力エラー、自然数を入れてください");
-                }
-                float legs;
-                while (true)
-                {
-                    legs = InputFloat("脚の数を入力してください", legMin, legMax);
-                    if (IsNaturalNumberOr0(legs) && legs % 2 == 0)
-                    {
-                        break;
-                    }
-                    Console.WriteLine($"入力エラー、偶数を入れてください");
-                }
+                float heads = InputFloat("頭の数を入力してください", headMin, headMax);
+                float legs = InputFloat("脚の数を入力してください", legMin, legMax);
                 var turtle = legs / 2 - heads;
                 var crane = heads - turtle;
                 Console.WriteLine($"鶴の数{crane}.亀の数{turtle}");
@@ -42,8 +24,6 @@
                 Console.WriteLine("入力エラー");
             }
         }
-
-
         /// <summary>
         /// 浮動小数点数を入力
         /// </summary>

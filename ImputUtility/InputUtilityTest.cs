@@ -8,10 +8,11 @@ namespace InputUtilitys
         {
             var name = InputUtility.Input("名前は？");
             Console.WriteLine($"{name}さんですね。");
-            var age = InputUtility.InputNumber(100, 3, "年齢を入力して下さい","うそはだめです");
+            var age = InputUtility.InputNumber("年齢を入力して下さい",3,100 ,"うそはだめです");
             Console.WriteLine($"{name}さんは、{age}才ですね。");
-            var tall = InputUtility.InputFloat(300f,  100,"身長はいくつですか(cm)", "うそですね");
+            var tall = InputUtility.InputFloat("身長はいくつですか(cm)",100,300, "うそですね");
             Console.WriteLine($"{name}さんは、{age}才で、身長は{tall}cmですね。");
+            Console.WriteLine($"未成年判定は{InputUtility.IsInRange<int>( age,1,100)}");
         }
     }
 }
