@@ -82,38 +82,37 @@ namespace Ex24
             {
                 Console.WriteLine($"{message}\n範囲は{min}から{max}");
                 #region TryParsePattern
-                try
-                {
+                /*                try
+                                {
 
-                    i = float.Parse(Console.ReadLine());
-                    if (i >= min && i < max)
-                    {
-                        break;
-                    }
-                }
-                catch(FormatException)
-                {
-                    Console.WriteLine("数値を入力してください");
-                    continue;
-                }
-                catch(OverflowException)
-                {
-                    Console.WriteLine("異常な入力です");
-                    continue;
-                }
+                                    i = float.Parse(Console.ReadLine());
+                                    if (i >= min && i < max)
+                                    {
+                                        break;
+                                    }
+                                }
+                                catch(FormatException)
+                                {
+                                    Console.WriteLine("数値を入力してください");
+                                    continue;
+                                }
+                                catch(OverflowException)
+                                {
+                                    Console.WriteLine("異常な入力です");
+                                    continue;
+                                }*/
                 #endregion
-/*                if (float.TryParse(Console.ReadLine(), out i) && i >= min && i < max)
+                if (float.TryParse(Console.ReadLine(), out i) && i >= min && i < max)
                 {
                     break;
                 }
                 else
                 {
                     Console.WriteLine("入力エラー");
-                }*/
+                }
             }
             return i;
         }
-
         static bool IsNaturalNumberOr0(float val)
         {
             return (Math.Floor(val) == val && val >= 0.0);
