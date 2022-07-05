@@ -1,8 +1,7 @@
 ﻿using System;
-
-namespace Ex24
+namespace Ex25_hint
 {
-    class Ex24
+    class Ex25_hint
     {
         const int headMin = 0;        // 頭の数の最小値
         const int headMax = 1000;  // 頭の数の最大値 
@@ -14,6 +13,7 @@ namespace Ex24
             while (true)
             {
                 float heads;
+                // 頭の数を入力
                 while (true)
                 {
                     heads = InputFloat("頭の数を入力してください", headMin, headMax);
@@ -24,6 +24,7 @@ namespace Ex24
                     Console.WriteLine("入力エラー、自然数を入れてください");
                 }
                 float legs;
+                // 脚の数を入力
                 while (true)
                 {
                     legs = InputFloat("脚の数を入力してください", legMin, legMax);
@@ -33,6 +34,8 @@ namespace Ex24
                     }
                     Console.WriteLine($"入力エラー、偶数を入れてください");
                 }
+
+                /* ---ここから
                 var turtle = GetTurtle((int)heads, (int)legs);
                 var crane = GetCrane((int)heads, (int)legs);
                 Console.WriteLine($"鶴の数{crane}.亀の数{turtle}");
@@ -42,8 +45,26 @@ namespace Ex24
                     break;
                 }
                 Console.WriteLine("入力エラー");
+                --- ここまでを別の処理にして置き換える　*/
+                int crane;  // 鶴の数を格納する変数
+                int turtle;	// 亀の数を格納する変数
+                if (GetCraneTurtle((int)heads, (int)legs, out crane, out turtle))
+                {
+                    // 正常に算出、craneとturtleに数が入ってる
+                }
+                else
+                {
+                    // 出た答えが異常、craneとturtleに数は入っていない
+                }
             }
         }
+        static bool GetCraneTurtle(int heads, int legs, out int crane, out int turtle)
+        {
+            crane = 0;  //値を求める
+            turtle = 0; //値を求める
+            return true;    //正常値ならtrue、異常ならfalseを返す
+        }
+
         static int GetTurtle(int heads, int legs)
         {
             return legs / 2 - heads;
