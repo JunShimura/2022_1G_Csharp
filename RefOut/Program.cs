@@ -6,11 +6,13 @@ namespace RefOut
     {
         static void Main()
         {
-            int x = 16384;
+/*         
+ *         int x = 16384;
             int y = 48;
             int g = GetGcm(x, y);
+*/
             Console.WriteLine($"gcm({x},{y})={g}");
-/*            int a = 100;
+            int a = 100;
             //Console.Write($"a={a} → ");
             Test(ref a);
             Console.WriteLine($"{a}");
