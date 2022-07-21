@@ -9,7 +9,7 @@ namespace Ex26
             var height = InputUtility.InputFloat("高さ");
             var depth = InputUtility.InputFloat("奥行");
             Box box = new Box(width, height, depth);
-            Console.WriteLine($"boxの表面積{box.GetSurface()}boxの体積={box.GetVolume()}");
+            Console.WriteLine($"boxの表面積={box.GetSurface()}です。\nboxの体積={box.GetVolume()}です。");
         }
     }
     class Box
