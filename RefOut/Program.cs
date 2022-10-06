@@ -6,8 +6,8 @@ namespace RefOut
     {
         static void Main()
         {
-            int x = 16384;
-            int y = 48;
+            int x = 219;
+            int y = 69;
             int g = GetGcm(x, y);
             Console.WriteLine($"gcm({x},{y})={g}");
 /*            int a = 100;

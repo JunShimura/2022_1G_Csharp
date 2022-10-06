@@ -137,7 +137,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColoredText", "ColoredText\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefOut", "RefOut\RefOut.csproj", "{08A763AA-A2B0-4C5B-B63A-3532339E2C7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex25_hint", "Ex25_hint\Ex25_hint.csproj", "{8D7869CA-2829-450C-B2F6-B3A6A56F1919}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex25_hint", "Ex25_hint\Ex25_hint.csproj", "{8D7869CA-2829-450C-B2F6-B3A6A56F1919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex26", "Ex26\Ex26.csproj", "{32922599-B463-4AA2-9C56-3B3E75703859}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -417,6 +419,10 @@ Global
 		{8D7869CA-2829-450C-B2F6-B3A6A56F1919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D7869CA-2829-450C-B2F6-B3A6A56F1919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D7869CA-2829-450C-B2F6-B3A6A56F1919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32922599-B463-4AA2-9C56-3B3E75703859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32922599-B463-4AA2-9C56-3B3E75703859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32922599-B463-4AA2-9C56-3B3E75703859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32922599-B463-4AA2-9C56-3B3E75703859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
