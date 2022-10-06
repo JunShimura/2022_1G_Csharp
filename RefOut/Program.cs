@@ -9,7 +9,7 @@ namespace RefOut
             int x = 219;
             int y = 69;
             int g = GetGcm(x, y);
-*/
+/*
             Console.WriteLine($"gcm({x},{y})={g}");
             int a = 100;
             //Console.Write($"a={a} → ");
