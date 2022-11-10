@@ -18,6 +18,9 @@ namespace InheritanceSampleSuraSura
             ElementarySchoolStudent iwamatsu
                 = new ElementarySchoolStudent("いわまつ",8, "デジタルアーツ仙台",4,2);
             //iwamatsu.SelfIntroduction();
+            Member tempMemer = iwamatsu;
+            tempMemer.SelfIntroduction();
+
             Person[] persons = new Person[] { person1, student1[0], student1[1], worker1, iwamatsu };
              foreach( Person person in persons)
             {
