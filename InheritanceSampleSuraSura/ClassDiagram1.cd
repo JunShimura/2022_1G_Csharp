@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="InheritanceSampleSuraSura.Student">
+    <Position X="5.5" Y="1" Width="2" />
+    <InheritanceLine Type="InheritanceSampleSuraSura.Person" FixedFromPoint="true">
+      <Path>
+        <Point X="4.5" Y="1.937" />
+        <Point X="5.5" Y="1.937" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InheritanceSampleSuraSura.Person">
+    <Position X="1.75" Y="1" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAIAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InheritanceSampleSuraSura.Worker">
+    <Position X="5.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Worker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InheritanceSampleSuraSura.ElementarySchoolStudent">
+    <Position X="8.75" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ElementarySchoolStudent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Yu Gothic UI" Size="9" />
+</ClassDiagram>
