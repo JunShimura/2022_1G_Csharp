@@ -14,7 +14,6 @@ namespace ShapeSolid
             this.shape = shape;
             this.height= height;
         }
-        public Column(string name) { }
         public float Volume {
             get
             {

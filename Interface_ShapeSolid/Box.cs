@@ -6,16 +6,11 @@ using System.Threading.Tasks;
 
 namespace ShapeSolid
 {
-    internal class Box
+    internal class Box:Column
     {
-        private float width;
-        private float height;
-        private float depth;
         public Box(float w, float h, float d)
         {
-            this.width = w;
-            this.height = h;
-            this.depth = d;
+
         }
         public Box(float w = 1)
         {
