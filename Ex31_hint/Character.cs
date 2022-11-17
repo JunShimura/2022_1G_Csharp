@@ -15,6 +15,10 @@ namespace Ex31_hint
             this.hp = hp;
             this.power = power;
         }
+        /// <summary>
+        /// Attack
+        /// </summary>
+        /// <param name="destination">Charactor to be attacked</param>
         public virtual void Attack(Character destination)
         {
             Console.WriteLine($"{this.name}は{destination.name}をぶんなぐった！");

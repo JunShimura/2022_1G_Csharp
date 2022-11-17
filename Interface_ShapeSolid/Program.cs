@@ -1,5 +1,6 @@
 ﻿using InputUtilitys;
-namespace Ex29
+using ShapeSolid;
+namespace Interface_ShapeSolid
 {
     internal class Program
     {

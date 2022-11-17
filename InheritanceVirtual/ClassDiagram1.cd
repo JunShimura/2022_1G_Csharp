@@ -1,35 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="InheritanceSampleSuraSura.Student">
-    <Position X="7.75" Y="0.75" Width="2" />
+  <Class Name="InheritanceVirtual.Student">
+    <Position X="6.75" Y="0.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Student.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="InheritanceSampleSuraSura.Person">
+  <Class Name="InheritanceVirtual.Person">
     <Position X="1" Y="0.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAAAAAAIAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="InheritanceSampleSuraSura.Worker">
-    <Position X="7.75" Y="3.75" Width="2" />
+  <Class Name="InheritanceVirtual.Worker">
+    <Position X="6.75" Y="3.25" Width="2" />
+    <InheritanceLine Type="InheritanceVirtual.Member" FixedToPoint="true">
+      <Path>
+        <Point X="5.125" Y="2.627" />
+        <Point X="5.125" Y="2.875" />
+        <Point X="7.688" Y="2.875" />
+        <Point X="7.688" Y="3.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
       <FileName>Worker.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="InheritanceSampleSuraSura.ElementarySchoolStudent">
-    <Position X="10.5" Y="0.75" Width="2" />
+  <Class Name="InheritanceVirtual.ElementarySchoolStudent">
+    <Position X="9.25" Y="0.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>ElementarySchoolStudent.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="InheritanceSampleSuraSura.Member">
-    <Position X="4.5" Y="0.75" Width="1.75" />
+  <Class Name="InheritanceVirtual.Member">
+    <Position X="4.25" Y="0.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Member.cs</FileName>

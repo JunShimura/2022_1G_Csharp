@@ -13,7 +13,7 @@ namespace Ex31_hint
             Tank tank2 = new Tank("がんタンク", 10000, 125);
             tank2.bullet = 5;
             Character[] characters = { character1, character2, tank1, tank2 };
-            for(var i = 1; i < characters.Length; i++)
+            for(var i = 0; i < characters.Length; i++)
             {
                 characters[i].Attack(character1);
             }
