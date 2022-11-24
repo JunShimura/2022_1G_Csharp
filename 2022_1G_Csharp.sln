@@ -167,6 +167,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex31", "Ex31\Ex31.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_ShapeSolid", "Interface_ShapeSolid\Interface_ShapeSolid.csproj", "{17B2103A-7C22-4697-B14F-516803180124}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractSample", "AbstractSample\AbstractSample.csproj", "{1BF05724-A713-430D-B117-A4D3B33D2EED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -501,6 +503,10 @@ Global
 		{17B2103A-7C22-4697-B14F-516803180124}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17B2103A-7C22-4697-B14F-516803180124}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17B2103A-7C22-4697-B14F-516803180124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BF05724-A713-430D-B117-A4D3B33D2EED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BF05724-A713-430D-B117-A4D3B33D2EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BF05724-A713-430D-B117-A4D3B33D2EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BF05724-A713-430D-B117-A4D3B33D2EED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
