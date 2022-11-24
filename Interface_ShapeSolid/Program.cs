@@ -6,7 +6,11 @@ namespace Interface_ShapeSolid
     {
         static void Main(string[] args)
         {
-            // 幅3,高さ4,奥行5の箱の表面積を求める（インスタンスを作らずに計算）
+            ISolid box = new Box(2, 3, 5);
+            Console.WriteLine($"体積={box.Volume},表面積={box.Surface}");
+
+
+/*            // 幅3,高さ4,奥行5の箱の表面積を求める（インスタンスを作らずに計算）
             TriangularPrism triangularPrism1 = new TriangularPrism(3, 4, 6);
             var s1 = triangularPrism1.GetSurface();
             var v1 = triangularPrism1.GetVolume();
@@ -45,7 +49,7 @@ namespace Interface_ShapeSolid
             if (s1 != (float)169.646003293849 || s1 != s2 || v1 != (float)169.646003293849 || v1 != v2)
             {
                 Console.WriteLine("Test is faild.");
-            }
+            }*/
         }
     }
 }

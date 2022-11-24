@@ -8,8 +8,9 @@ namespace ShapeSolid
 {
     internal interface IShape
     {
-        public float Surface { get; }
         public float Width { get; }
         public float Height { get; }
+        public float Surface { get; }
+        public float Circumference { get; }
     }
 }

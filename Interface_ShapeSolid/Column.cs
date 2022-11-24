@@ -6,19 +6,25 @@ using System.Threading.Tasks;
 
 namespace ShapeSolid
 {
-    internal class Column:ISolid
+    internal class Column : ISolid
     {
         protected float height;
-        Shape shape;
-        public Column(Shape shape,float height) {
+        IShape shape;
+        public Column(IShape shape, float height)
+        {
             this.shape = shape;
-            this.height= height;
+            this.height = height;
         }
-        public float Volume {
+        public float Volume
+        {
             get
             {
                 return shape.Surface * this.height;
             }
+        }
+        public float Surface
+        {
+            get { return shape.Surface * 2 + shape.Circumference * this.height; }
         }
     }
 }

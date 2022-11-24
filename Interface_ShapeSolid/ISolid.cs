@@ -9,5 +9,6 @@ namespace ShapeSolid
     internal interface ISolid
     {
         public float Volume { get; }
+        public float Surface { get; }
     }
 }

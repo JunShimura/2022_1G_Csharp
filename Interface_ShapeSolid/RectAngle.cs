@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShapeSolid
 {
-    internal struct RectAngle:IShape
+    internal struct RectAngle : IShape
     {
         readonly float width;
         readonly float height;
@@ -15,10 +15,6 @@ namespace ShapeSolid
             this.width = width;
             this.height = height;
         }
-        public float Surface
-        {
-            get { return width * height; }
-        }
         public float Width
         {
             get { return width; }
@@ -26,6 +22,21 @@ namespace ShapeSolid
         public float Height
         {
             get { return height; }
+        }
+        public float Surface
+        {
+            get { return width * height; }
+        }
+        public float Circumference
+        {
+            get
+            {
+                return (width + height) / 2.0f;
+            }
+        }
+         static public float GetSurface(float width,float height)
+        {
+            return width * height;
         }
     }
 }
