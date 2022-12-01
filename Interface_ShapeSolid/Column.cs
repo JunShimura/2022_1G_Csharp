@@ -9,7 +9,7 @@ namespace ShapeSolid
     internal class Column : ISolid
     {
         protected float height;
-        IShape shape;
+        protected IShape shape;
         public Column(IShape shape, float height)
         {
             this.shape = shape;

@@ -6,32 +6,20 @@ using System.Threading.Tasks;
 
 namespace ShapeSolid
 {
-    internal class Cylinder
+    internal class Cylinder:Column
     {
-        private float radius;
-        private float height;
-        
-        public Cylinder(float radius, float height)
+        public Cylinder(float radius, float height):base(new Circle(radius), height)
         {
-            this.radius = radius;
             this.height = height;
         }
 
-        public float GetVolume()
-        {
-            return GetVolume(radius, height);
-        }
         static public float GetVolume(float radius, float height)
         {
-            return (float)(radius *radius*Math.PI *height);
-        }
-        public float GetSurface()
-        {
-            return GetSurface(radius, height);
+            return (float)(new Cylinder(radius, height).Volume);
         }
         static public float GetSurface(float radius, float height)
         {
-            return (float)(radius * Math.PI * 2 * (radius + height));
+            return (float)(new Cylinder(radius, height).Surface);
         }
     }
 }
