@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 
@@ -17,7 +18,8 @@ namespace Ex32
         }
         public override float GetSurface()
         {
-            return length0 * GetHeight();
+            float s = (length0 + length1 + length2) / 2;
+            return (float)(Math.Sqrt(s * (s - length0) * (s - length1) * (s - length2)));
         }
         public override float GetCircumference()
         {
@@ -25,14 +27,11 @@ namespace Ex32
         }
         public override void GetBounds(out float width, out float height)
         {
-            width = length0;
-            height = GetHeight();
-        }
-
-        private float GetHeight()
-        {
-            var cos = (length0 * length0 + length2 * length2 - length1 * length1) / (2 * length0 * length2);
-            return length2 * MathF.Sqrt(1 - cos * cos);
+            width = length0 > length1
+                ? (length0 > length2 ? length0 : length2)
+                : (length1 > length2 ? length1 : length2);
+            height = (float)((double)GetSurface() / width*2.0);
+            return;
         }
     }
 }
