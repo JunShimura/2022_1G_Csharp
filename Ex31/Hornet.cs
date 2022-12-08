@@ -18,7 +18,7 @@ namespace Ex31
             }
             else
             {
-                base.Attack(destination);
+                Console.WriteLine($"{this.name}は{destination.name}が毒耐性があるので攻撃できません。");
             }
         }
     }

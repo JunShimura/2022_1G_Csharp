@@ -7,7 +7,8 @@ namespace Ex31
     class Tank : Character
     {
         public int bullet = 0;
-        public Tank(string name, float hp, float power ) : base(name, hp, power,true) { }
+        public Tank(string name, float hp, float power ) 
+            : base(name, hp, power,true) { }
         public override void Attack(Character destination)
         {
             if (bullet > 0)
