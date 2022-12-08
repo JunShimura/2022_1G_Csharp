@@ -30,7 +30,7 @@ namespace Ex32
             width = length0 > length1
                 ? (length0 > length2 ? length0 : length2)
                 : (length1 > length2 ? length1 : length2);
-            height = (float)((double)GetSurface() / width*2.0);
+            height = (float)((double)GetSurface() / width * 2.0);
             return;
         }
     }
