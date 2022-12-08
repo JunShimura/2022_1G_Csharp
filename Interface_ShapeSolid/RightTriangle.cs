@@ -1,16 +1,17 @@
-﻿using System;
+﻿using ShapeSolid;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ShapeSolid
+namespace Interface_ShapeSolid
 {
-    internal struct RectAngle : IShape
+    internal class RightTriangle : IShape
     {
-        public readonly float width;
-        public readonly float height;
-        public RectAngle(float width = 0, float height = 0)
+        readonly float width;
+        readonly float height;
+        public RightTriangle(float width, float height)
         {
             this.width = width;
             this.height = height;
@@ -25,18 +26,18 @@ namespace ShapeSolid
         }
         public float Surface
         {
-            get { return GetSurface( width,height); }
+            get { return GetSurface(width,height); }
         }
         public float Circumference
         {
             get
             {
-                return (width + height) * 2.0f;
+                return (float)(width + height + Math.Sqrt(width * width + height + height));
             }
         }
-         static public float GetSurface(float width,float height)
+        static public float GetSurface(float width, float height)
         {
-            return width * height;
+            return width / 2 * height;
         }
     }
 }

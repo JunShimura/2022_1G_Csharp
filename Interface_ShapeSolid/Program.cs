@@ -6,9 +6,16 @@ namespace Interface_ShapeSolid
     {
         static void Main(string[] args)
         {
-            ISolid box = new Box(2, 3, 5);
-            Console.WriteLine($"体積={box.Volume},表面積={box.Surface}");
-
+            ISolid[] solids
+                = {
+                        new Box(2, 3, 5),
+                        new TriangularPrism(2,3,5),
+                        new Sphere(3)
+            };
+            foreach (ISolid solid in solids)
+            {
+                Console.WriteLine($"体積={solid.Volume},表面積={solid.Surface}");
+            }
 
 /*            // 幅3,高さ4,奥行5の箱の表面積を求める（インスタンスを作らずに計算）
             TriangularPrism triangularPrism1 = new TriangularPrism(3, 4, 6);

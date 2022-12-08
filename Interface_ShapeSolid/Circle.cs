@@ -18,6 +18,6 @@ namespace ShapeSolid
         public float Width { get { return radius; } }
         public float Height { get { return radius; } }
         public float Surface { get { return (float)(Math.PI * radius * radius); } }
-        public float Circumference { get { return (float)(Math.PI * radius * 2; } }
+        public float Circumference { get { return (float)(Math.PI * radius * 2); } }
     }
 }

@@ -6,16 +6,20 @@ using System.Threading.Tasks;
 
 namespace ShapeSolid
 {
-    internal class Sphere
+    internal class Sphere : ISolid
     {
         private float radius;
         public Sphere(float radius)
         {
             this.radius = radius;
         }
-        public float GetVolume()
+        public float Volume
         {
-            return GetVolume(radius);
+            get { return GetVolume(radius); }
+        }
+        public float Surface
+        {
+            get { return GetSurface(radius); }
         }
         public static float GetVolume(float radius)
         {
