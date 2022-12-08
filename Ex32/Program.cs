@@ -13,13 +13,13 @@ namespace Ex32
             Triangle triangle = new Triangle(3,4,5);
 
             Surface[] surfaces = { rectAngle1, rightTriangle,circle,triangle };
-            for(var i = 0; i < surfaces.Length; i++)
+            foreach(Surface surface in surfaces)
             {
-                Console.WriteLine($"surfacesの面積は{surfaces[i].GetSurface()}");
-                Console.WriteLine($"surfacesの周囲長は{surfaces[i].GetCircumference()}");
+                Console.WriteLine($"surfacesの面積は{surface.GetSurface()}");
+                Console.WriteLine($"surfacesの周囲長は{surface.GetCircumference()}");
                 float boundsWidth;
                 float boundsHeight;
-                surfaces[i].GetBounds(out boundsWidth, out boundsHeight);
+                surface.GetBounds(out boundsWidth, out boundsHeight);
                 Console.WriteLine($"surfacesの入る長方形は、幅が{boundsWidth}で高さが{boundsHeight}");
             }
         }
