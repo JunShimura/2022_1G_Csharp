@@ -12,7 +12,7 @@ namespace ShapeSolid
         {
 
         }
-        public Box(float w = 1):base(new RectAngle(1,1),1)
+        public Box(float w = 1):base(new RectAngle(w,w),w)
         {
 
         }

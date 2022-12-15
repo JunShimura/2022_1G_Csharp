@@ -17,14 +17,11 @@ namespace ShapeSolid
         }
         public float Volume
         {
-            get
-            {
-                return shape.Surface * this.height;
-            }
+            get=>shape.Surface * this.height;
         }
         public float Surface
         {
-            get { return shape.Surface * 2 + shape.Circumference * this.height; }
+            get=>shape.Surface * 2 + shape.Circumference * this.height;
         }
     }
 }

@@ -10,6 +10,7 @@ namespace Ex32
         readonly public float length0;
         readonly public float length1;
         readonly public float length2;
+
         public Triangle(float length0 = 0, float length1 = 0, float length2 = 0)
         {
             this.length0 = length0;
@@ -30,6 +31,30 @@ namespace Ex32
             width = length0 > length1
                 ? (length0 > length2 ? length0 : length2)
                 : (length1 > length2 ? length1 : length2);
+/*            width = MathF.Max(MathF.Max(length0, length1), length2);
+            if (length0 > length1)
+            {
+                if (length0 > length2)
+                {
+                    width = length0;
+                }
+                else
+                {
+                    width = length2;
+                }
+            }
+            else
+            {
+                if (length1 > length2)
+                {
+                    width = length1;
+                }
+                else
+                {
+                    width = length2;
+                }
+            }*/
+
             height = (float)((double)GetSurface() / width * 2.0);
             return;
         }

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="ShapeSolid.Sphere">
-    <Position X="10.25" Y="2.75" Width="1.5" />
+    <Position X="5.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAACAAAAAAAAAAAAAAEAAAACAAAAAYAAAAAAAA=</HashCode>
       <FileName>Sphere.cs</FileName>
@@ -9,14 +9,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ShapeSolid.TriangularPrism">
-    <Position X="12.5" Y="7" Width="1.5" />
+    <Position X="9.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TriangularPrism.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ShapeSolid.Column">
-    <Position X="12" Y="2.75" Width="1.5" />
+    <Position X="7.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAAAAIAAAAABAA=</HashCode>
       <FileName>Column.cs</FileName>
@@ -24,21 +24,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ShapeSolid.Box">
-    <Position X="14.75" Y="7" Width="1.5" />
+    <Position X="12" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Box.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ShapeSolid.Cylinder">
-    <Position X="17" Y="7" Width="1.5" />
+    <Position X="7.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAA=</HashCode>
       <FileName>Cylinder.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Interface_ShapeSolid.RightTriangle" Collapsed="true">
-    <Position X="5.5" Y="4.5" Width="1.5" />
+    <Position X="1.25" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAQAQAAAAEgEAAAAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>RightTriangle.cs</FileName>
@@ -46,22 +46,30 @@
     <Lollipop Position="0.2" />
   </Class>
   <Struct Name="ShapeSolid.RectAngle" Collapsed="true">
-    <Position X="5.5" Y="3.25" Width="1.5" />
+    <Position X="1.25" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAQAQAAAAEgEAAAAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>RectAngle.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Struct>
+  <Struct Name="ShapeSolid.Circle" Collapsed="true">
+    <Position X="1.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAADAAAAAAAAAAAAEgEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Circle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Struct>
   <Interface Name="ShapeSolid.IShape">
-    <Position X="4.75" Y="0.75" Width="1.5" />
+    <Position X="1.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAAAAEgEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IShape.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="ShapeSolid.ISolid">
-    <Position X="10.25" Y="0.75" Width="1.5" />
+    <Position X="5.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>ISolid.cs</FileName>
