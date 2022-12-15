@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace ShapeSolid
 {
-    internal class TriangularPrism : Column
+    internal class RightTriangularPrism : Column
     {
-        public TriangularPrism(float w, float h, float d) : base(new RightTriangle(w, d), h)
+        public RightTriangularPrism(float w, float h, float d) : base(new RightTriangle(w, d), h)
         {
         
         }

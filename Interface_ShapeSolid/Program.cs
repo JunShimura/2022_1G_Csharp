@@ -9,7 +9,7 @@ namespace Interface_ShapeSolid
             ISolid[] solids
                 = {
                         new Box(2, 3, 5),
-                        new TriangularPrism(2,3,5),
+                        new RightTriangularPrism(2,3,5),
                         new Sphere(3)
             };
             foreach (ISolid solid in solids)

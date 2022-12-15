@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Interface_ShapeSolid
 {
-    internal class RightTriangle : IShape
+    internal struct RightTriangle : IShape
     {
         readonly float width;
         readonly float height;

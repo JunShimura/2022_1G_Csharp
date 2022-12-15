@@ -8,11 +8,11 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="ShapeSolid.TriangularPrism">
+  <Class Name="ShapeSolid.RightTriangularPrism">
     <Position X="9.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>TriangularPrism.cs</FileName>
+      <FileName>RightTriangularPrism.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ShapeSolid.Column">
@@ -37,16 +37,8 @@
       <FileName>Cylinder.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Interface_ShapeSolid.RightTriangle" Collapsed="true">
-    <Position X="1.25" Y="4" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAQAQAAAAEgEAAAAAAAAAAQAAAAAAAA=</HashCode>
-      <FileName>RightTriangle.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
   <Struct Name="ShapeSolid.RectAngle" Collapsed="true">
-    <Position X="1.25" Y="3" Width="1.5" />
+    <Position X="1.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAQAQAAAAEgEAAAAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>RectAngle.cs</FileName>
@@ -54,10 +46,26 @@
     <Lollipop Position="0.2" />
   </Struct>
   <Struct Name="ShapeSolid.Circle" Collapsed="true">
-    <Position X="1.25" Y="5" Width="1.5" />
+    <Position X="1.25" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAADAAAAAAAAAAAAEgEAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Circle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Struct>
+  <Struct Name="Interface_ShapeSolid.RightTriangle" Collapsed="true">
+    <Position X="1.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAQAQAAAAEgEAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>RightTriangle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Struct>
+  <Struct Name="Interface_ShapeSolid.Triangle" Collapsed="true">
+    <Position X="1.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAgAAAAAAAAAYEkEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Triangle.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Struct>
