@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EX33_ex
+namespace EX33_hint
 {
     class RectAngle : ISurface, ICircumference, IBounds
     {

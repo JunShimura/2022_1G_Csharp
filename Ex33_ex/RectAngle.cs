@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EX33_ex
 {
-    class RectAngle : ISurface, ICircumference, IBounds
+    class RectAngle : ISurface, ICircumference, IBounds, IComparable<RectAngle>
     {
         readonly public float width;
         readonly public float height;
@@ -13,6 +13,10 @@ namespace EX33_ex
         {
             this.width = width;
             this.height = height;
+        }
+        public float Surface
+        {
+            get { return width * height; }
         }
         public float GetSurface()
         {
@@ -39,6 +43,16 @@ namespace EX33_ex
         {
             return !(rectAngle1 == rectAngle2);
         }
+        int IComparable<RectAngle>.CompareTo(RectAngle other)
+        {
+            if (other.Surface > this.Surface)
+                return -1;
+            else if (other.Surface == this.Surface)
+                return 0;
+            else
+                return 1;
+        }
+
         public static RectAngle operator +(RectAngle rectAngle1, RectAngle rectAngle2)
         {
             RectAngle ans = new RectAngle(float.MaxValue,float.MaxValue);
@@ -49,7 +63,7 @@ namespace EX33_ex
                 Plus(rectAngle1.height, rectAngle2.width, rectAngle1.width, rectAngle2.height),
                 Plus(rectAngle1.height, rectAngle2.height, rectAngle1.width, rectAngle2.width)
             };
-            //ans = candidates.Min(candidate => candidate.GetSurface);
+            ans = candidates.Min();
             foreach (RectAngle candidate in candidates)
             {
                 if (ans.GetSurface() > candidate.GetSurface())
