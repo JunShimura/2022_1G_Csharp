@@ -64,14 +64,14 @@ namespace EX33_ex
                 Plus(rectAngle1.height, rectAngle2.height, rectAngle1.width, rectAngle2.width)
             };
             ans = candidates.Min();
-            foreach (RectAngle candidate in candidates)
+            /*foreach (RectAngle candidate in candidates)
             {
                 if (ans.GetSurface() > candidate.GetSurface())
                 {
                     ans = candidate;
                 }
             }
-
+            */
             return ans;
         }
         private static RectAngle Plus(float l1, float l2, float l3, float l4)
