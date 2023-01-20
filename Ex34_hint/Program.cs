@@ -10,8 +10,7 @@ namespace Interface_ShapeSolid
                 = {
                         new Box(2, 3, 5),
                         new RightTriangularPrism(2,3,5),
-                        new Sphere(3),
-                        new Column<RectAngle>(new RectAngle(2,4),5),
+                        new Sphere(3)
             };
             foreach (ISolid solid in solids)
             {

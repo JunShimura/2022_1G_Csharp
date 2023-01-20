@@ -77,7 +77,6 @@ namespace ShapeSolid
                 Plus(rectAngle1.height, rectAngle2.height, rectAngle1.width, rectAngle2.width)
             };
             ans = candidates.Min();
-
             return ans;
         }
         private static RectAngle Plus(float l1, float l2, float l3, float l4)

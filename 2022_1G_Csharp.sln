@@ -177,7 +177,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Indexer", "Indexer\Indexer.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex33", "Ex33\Ex33.csproj", "{C521C9F5-A425-4727-9A49-2CEB077BF9F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex33_ex", "Ex33_ex\Ex33_ex.csproj", "{0B7D7A51-A972-4247-A44F-2CC11CBDA271}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex33_ex", "Ex33_ex\Ex33_ex.csproj", "{0B7D7A51-A972-4247-A44F-2CC11CBDA271}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ex34_hint", "Ex34_hint\Ex34_hint.csproj", "{9DBFAC7F-A4B4-4DFF-B37B-747F323149CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -537,6 +539,10 @@ Global
 		{0B7D7A51-A972-4247-A44F-2CC11CBDA271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B7D7A51-A972-4247-A44F-2CC11CBDA271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B7D7A51-A972-4247-A44F-2CC11CBDA271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DBFAC7F-A4B4-4DFF-B37B-747F323149CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBFAC7F-A4B4-4DFF-B37B-747F323149CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBFAC7F-A4B4-4DFF-B37B-747F323149CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBFAC7F-A4B4-4DFF-B37B-747F323149CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

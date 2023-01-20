@@ -24,23 +24,4 @@ namespace ShapeSolid
             get=>shape.Surface * 2 + shape.Circumference * this.height;
         }
     }
-    internal class Column<T> : ISolid where T : IShape
-    {
-        protected float height;
-        protected T shape;
-        public Column(T shape, float height)
-        {
-            this.shape = shape;
-            this.height = height;
-        }
-        public float Volume
-        {
-            get => shape.Surface * this.height;
-        }
-        public float Surface
-        {
-            get => shape.Surface * 2 + shape.Circumference * this.height;
-        }
-    }
-
 }
