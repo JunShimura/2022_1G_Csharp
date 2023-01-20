@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EX33_ex
 {
-    class RectAngle : ISurface, ICircumference, IBounds, IComparable<RectAngle>
+    class RectAngle : ISurface, ICircumference, IBounds, System.IComparable<RectAngle>
     {
         readonly public float width;
         readonly public float height;
