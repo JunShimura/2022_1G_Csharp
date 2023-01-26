@@ -11,8 +11,19 @@ namespace Interface_ShapeSolid
                         new Box(2, 3, 5),
                         new RightTriangularPrism(2,3,5),
                         new Sphere(3),
-                        new Column<RectAngle>(new RectAngle(2,4),5),
+                        new Column<RectAngle>(new RectAngle(2,3),5),
             };
+            //Boxクラスを利用する
+            Box box01 = new Box(2, 3, 5);
+
+            //ジェネリック化したColumnを利用する
+            Column<RectAngle> box02 //柱を底面を四角で作ってください
+             = new Column<RectAngle>(new RectAngle(2, 5), 3);
+
+            //三角柱でジェネリック化したColumnを利用する
+            Column<Triangle> trianglePrism
+                = new Column<Triangle>(new Triangle(3, 2, 1), 4);
+
             foreach (ISolid solid in solids)
             {
                 Console.WriteLine($"体積={solid.Volume},表面積={solid.Surface}");

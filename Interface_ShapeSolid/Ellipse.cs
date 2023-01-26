@@ -32,7 +32,7 @@ namespace Interface_ShapeSolid
         {
             get
             {
-                return 
+                return GetSurface(width, height);
             }
         }
         static public float GetSurface(float width, float height)
